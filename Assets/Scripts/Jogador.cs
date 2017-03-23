@@ -10,6 +10,11 @@ public class Jogador : MonoBehaviour {
 	private Rigidbody2D rb2d;
 	private AudioSource audioSource;
 
+	private float eixoXMin, eixoXMax;
+	private float eixoYMin, eixoYMax;
+
+	private float posicaoX, posicaoY;
+
 	// A informação SerializeField significa 
 	// que mesmo sendo private o atributo será visível na Unity
 	[SerializeField]
@@ -31,6 +36,11 @@ public class Jogador : MonoBehaviour {
 	void Start () {
 
 		controle = 0f;
+		eixoXMax = CameraPrincipal.LimitarDireitaX(transform.position);
+		eixoXMin = CameraPrincipal.LimitarEsquerdaX(transform.position);
+		eixoYMax = CameraPrincipal.LimitarParaCimaY(transform.position);
+		eixoYMin = CameraPrincipal.LimitarParaBaixoY(transform.position);
+
 		rb2d = GetComponent<Rigidbody2D>();
 		audioSource = GetComponent<AudioSource>();
 	}
@@ -72,6 +82,27 @@ public class Jogador : MonoBehaviour {
 			
 		}
 
+		LimitarPosicaoJogador();
+
 		//Debug.Log(rb2d.velocity);
+	}
+
+	void LimitarPosicaoJogador()
+	{
+		posicaoX = rb2d.position.x; //ou transform.position.x;
+		posicaoY = rb2d.position.y;
+
+		posicaoX = Mathf.Clamp(posicaoX, eixoXMin, eixoXMax);
+		posicaoY = Mathf.Clamp(posicaoY, eixoYMin, eixoYMax);
+
+		if(posicaoX != transform.position.x)
+		{
+			rb2d.position = new Vector2(posicaoX, rb2d.position.y);
+		}
+
+		if (posicaoY != transform.position.y)
+		{
+			rb2d.position = new Vector2(rb2d.position.x, posicaoY);
+		}
 	}
 }

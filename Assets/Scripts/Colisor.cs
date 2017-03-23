@@ -13,6 +13,7 @@ public class Colisor : MonoBehaviour {
 		float posicaoX = posicao.x;
 		float posicaoY = posicao.y;
 		//Debug.Log(posicao);
+		//O tamanho do colisor será baseado no tamanho da main câmera
 		colisor.size = new Vector2(posicaoX, posicaoY) * 2;
 	}
 	
