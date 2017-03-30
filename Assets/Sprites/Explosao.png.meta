@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 289a9bb62c06c1649ae2be5927af1c2d
-timeCreated: 1490302270
+timeCreated: 1490837119
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -16,6 +16,7 @@ TextureImporter:
     21300018: Explosao_21
     21300020: Explosao_23
     21300022: Explosao_28
+    21300024: Explosao_29
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -79,6 +80,22 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
   - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
     maxTextureSize: 2048
     textureFormat: -1
     textureCompression: 1
@@ -171,10 +188,10 @@ TextureImporter:
       name: Explosao_14
       rect:
         serializedVersion: 2
-        x: 455
-        y: 9
-        width: 77
-        height: 60
+        x: 457
+        y: 7
+        width: 76
+        height: 62
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +201,10 @@ TextureImporter:
       name: Explosao_15
       rect:
         serializedVersion: 2
-        x: 542
-        y: 9
-        width: 80
-        height: 55
+        x: 543
+        y: 8
+        width: 81
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +214,10 @@ TextureImporter:
       name: Explosao_19
       rect:
         serializedVersion: 2
-        x: 637
-        y: 9
-        width: 54
-        height: 55
+        x: 633
+        y: 7
+        width: 58
+        height: 58
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,6 +259,19 @@ TextureImporter:
         height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Explosao_29
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 67
+        width: 100
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

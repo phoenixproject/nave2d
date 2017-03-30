@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nave2d", "nave2d.csproj", "{1ABE96EE-27B6-BEA9-13D2-2052ED5FA123}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nave2D", "Nave2D.csproj", "{99757210-BFCB-445D-E01A-53D9E3C22AD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1ABE96EE-27B6-BEA9-13D2-2052ED5FA123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1ABE96EE-27B6-BEA9-13D2-2052ED5FA123}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1ABE96EE-27B6-BEA9-13D2-2052ED5FA123}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1ABE96EE-27B6-BEA9-13D2-2052ED5FA123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99757210-BFCB-445D-E01A-53D9E3C22AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99757210-BFCB-445D-E01A-53D9E3C22AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99757210-BFCB-445D-E01A-53D9E3C22AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99757210-BFCB-445D-E01A-53D9E3C22AD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
