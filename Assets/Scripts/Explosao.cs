@@ -7,6 +7,7 @@ public class Explosao : MonoBehaviour {
 	[SerializeField]
 	private float tempo;
 
+
 	// Use this for initialization
 	void Start () {
 
@@ -15,8 +16,8 @@ public class Explosao : MonoBehaviour {
 			GetComponent<AudioSource>().Play();
 			Destroy(gameObject, tempo);
 		}
-		
+
 	}
-	
-	
+
+
 }
