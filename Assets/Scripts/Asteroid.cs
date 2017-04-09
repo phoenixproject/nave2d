@@ -23,11 +23,40 @@ public class Asteroid : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		Movimentar();
 	}
 	
 	void Movimentar()
 	{
-		//rb2d.
+		rb2d.angularVelocity = Random.Range(minimo, maximo);
+		rb2d.velocity = -transform.up * velocidade;
+	}
+
+	private void OnTriggerEnter2D(Collider2D outro)
+	{
+		PerderVida(outro);
+	}
+
+	void PerderVida(Collider2D outro)
+	{
+		if(outro.tag == "Bomba")
+		{
+			Instantiate(prefabExplosao1, transform.position, transform.rotation);
+		}
+		
+		if(tempoVida > 0)
+		{
+			tempoVida--;
+		}
+
+		if (tempoVida <= 0)
+		{
+			Instantiate(prefabExplosao2, transform.position, transform.rotation);
+
+			//Adicionar pontos
+			Destroy(gameObject);
+		}
+
+		Destroy(outro.gameObject);
 	}
 }
