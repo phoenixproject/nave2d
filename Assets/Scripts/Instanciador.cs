@@ -32,7 +32,7 @@ public class Instanciador : MonoBehaviour {
 			for (int i = 0; i < objetos.contador; i++)
 			{
 				Vector2 posicao = new Vector2(Random.Range(-instanciarValores.x, instanciarValores.x), instanciarValores.y);
-				Instantiate(objetos.prefab, posicao, Quaternion.identity);
+				Instantiate(objetos.prefab, posicao, objetos.prefab.transform.rotation);
 				yield return new WaitForSeconds(objetos.iniciarEsperar);
 			}
 

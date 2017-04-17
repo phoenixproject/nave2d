@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projetil : MonoBehaviour
+public class ObjetosCaindo : MonoBehaviour
 {
 
     [SerializeField]

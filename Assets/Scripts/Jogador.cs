@@ -108,4 +108,20 @@ public class Jogador : MonoBehaviour
             rb2d.position = new Vector2(rb2d.position.x, posicaoY);
         }
     }
+
+    void GanharVida(Collider2D outro)
+    {
+        if(outro.tag == "Energia")
+        {
+
+        }
+    }
+
+    void PerderVida(Collider2D outro)
+    {
+        if (outro.tag == "Asteroide" || outro.tag == "Inimigo")
+        {
+
+        }
+    }
 }
